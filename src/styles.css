@@ -1,0 +1,51 @@
+/* styles.css */
+.chart-container {
+    padding: 20px;
+    margin: auto;
+    max-width: 95%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.custom-tooltip {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.custom-tooltip .label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.custom-tooltip .intro {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #555555;
+}
+
+.custom-tooltip .desc {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #777777;
+}
+
+.text-rotate {
+    transform: rotate(-75deg);
+    transform-origin: right bottom;
+    white-space: nowrap;
+}
+
+.legend {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.bar-chart {
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
