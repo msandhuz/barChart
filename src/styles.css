@@ -1,13 +1,15 @@
-/* styles.css */
+/* General container styles for chart components */
 .chart-container {
     padding: 20px;
     margin: auto;
-    max-width: 95%;
+    max-width: 100%; /* Ensure container does not exceed the viewport width */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background-color: #f9f9f9;
     border-radius: 8px;
+    overflow-x: auto; /* Allows horizontal scrolling on smaller devices */
 }
 
+/* Tooltip customization for clarity and visibility */
 .custom-tooltip {
     background-color: #ffffff;
     border: 1px solid #cccccc;
@@ -34,18 +36,38 @@
     color: #777777;
 }
 
+/* Enhancements for text appearance within the charts */
 .text-rotate {
     transform: rotate(-75deg);
     transform-origin: right bottom;
     white-space: nowrap;
 }
 
+/* Legend styling for consistency and better alignment */
 .legend {
     margin-top: 10px;
     text-align: center;
 }
 
+/* Styling adjustments for bar charts to improve interaction */
 .bar-chart {
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .text-rotate {
+        transform: rotate(-45deg); /* Less severe angle for smaller screens */
+    }
+
+    .chart-container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .custom-tooltip .label,
+    .custom-tooltip .intro,
+    .custom-tooltip .desc {
+        font-size: 90%; /* Reduce font size on smaller screens */
+    }
 }

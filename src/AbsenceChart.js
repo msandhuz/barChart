@@ -18,6 +18,7 @@ const CustomTooltip = ({ active, payload }) => {
 };
 
 function AbsenceChart({ data, month }) {
+    
     return (
         <div className="chart-container">
             <h2>{month}</h2>
