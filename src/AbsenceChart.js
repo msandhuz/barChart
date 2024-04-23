@@ -22,11 +22,11 @@ function AbsenceChart({ data, month }) {
     return (
         <div className="chart-container">
             <h2>{month}</h2>
-            <ResponsiveContainer width="200%" height={500}>  
+            <ResponsiveContainer width="200%" height={600}>  
                 <BarChart data={data}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" angle={-75} textAnchor="end" interval={0} height={300} />
-                    <YAxis ticks={[1, 2, 3]} type="number" allowDecimals={false} domain={[0, 'dataMax + 0']} />
+                    <YAxis ticks={[1, 2, 3, 4, 5, 6, 7, 8]} type="number" allowDecimals={false} domain={[0, 'dataMax + 0']} />
                     <Tooltip content={<CustomTooltip />} />
                     <Legend />
                     <Bar dataKey="absences" fill="#8884d8" name="Days Absent" />
